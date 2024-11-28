@@ -5,3 +5,5 @@ version = "0.1.0"
 members = [ "mcp",
     "mcp_gen",
 ]
+[workspace.dependencies]
+
