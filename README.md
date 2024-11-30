@@ -7,5 +7,5 @@ Please not that this is very much a work in progress, but feel free to contribut
 Generates types from the anthropic schema.json
 
 ## MCP
-will contain the rust api 
+This is a rust crate that contains everything needed to build a MCP server and client (WIP)
 
