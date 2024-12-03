@@ -1,3 +1,9 @@
+
+```
+cargo run -- -c servers/test.json
+
+```
+
 # MCP-rs
 Anthorpic's Model Context Protocol implemented in rust
 

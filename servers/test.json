@@ -1,0 +1,55 @@
+{
+    "server": {
+      "name": "mcp-server",
+      "version": "0.1.0",
+      "transport": "stdio",
+      "host": "127.0.0.1",
+      "port": 3000,
+      "max_connections": 100,
+      "timeout_ms": 30000
+    },
+    "resources": {
+      "root_path": "./resources",
+      "allowed_schemes": ["file", "http", "https"],
+      "max_file_size": 10485760,
+      "enable_templates": true
+    },
+    "security": {
+      "enable_auth": false,
+      "token_secret": null,
+      "rate_limit": {
+        "requests_per_minute": 60,
+        "burst_size": 10
+      },
+      "allowed_origins": ["*"]
+    },
+    "logging": {
+      "level": "debug",
+      "file": "logs/server.log",
+      "format": "pretty"
+    },
+    "tool_settings": {
+      "enabled": true,
+      "require_confirmation": true,
+      "allowed_tools": ["*"],
+      "max_execution_time_ms": 30000,
+      "rate_limit": {
+        "requests_per_minute": 30,
+        "burst_size": 5
+      }
+    },
+    "tools": [
+      "ping_tool",
+      "test_tool",
+      "file_system"
+    ],
+    "prompts": [
+      {
+        "name": "test_prompt",
+        "description": "This is a test prompt",
+        "type": "text",
+        "required": true
+      }
+    ]
+  }
+  
